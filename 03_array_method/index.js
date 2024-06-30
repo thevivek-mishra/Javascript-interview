@@ -36,10 +36,10 @@ fruits.toString();
 // array toSplice()
 // array slice ()
 
-let arr = [1,2, 3,4, 5, 5, 6, 7,8]
+let arr1 = [1,2, 3,4, 5, 5, 6, 7,8]
 
 // length method : its give the length of array
-let len =arr.length
+let len =arr1.length
 // console.log(len)
 
 //toString() method : converts an array to a string of (comma seprated values.)
@@ -78,3 +78,11 @@ console.log(names)
 let lenOfNewArray = names.push("magaru")
 console.log(lenOfNewArray)
 console.log(names)
+
+// shift() METHOD
+// shift method removes the first element of the array and return the shifted element and also its change the original array
+let arr2 = ['banana','grapes','mango']
+
+let result =arr2.shift()
+
+console.log(arr2, result)
