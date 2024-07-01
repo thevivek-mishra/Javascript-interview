@@ -86,3 +86,9 @@ let arr2 = ['banana','grapes','mango']
 let result =arr2.shift()
 
 console.log(arr2, result)
+
+// unshift() method
+// unshift() method method add a new element at the beginning of the array and overwrite the original array
+
+const fruitsarr = ["Banana", "Orange", "Apple", "Mango"];
+fruitsarr.unshift("Lemon","Pineapple");
