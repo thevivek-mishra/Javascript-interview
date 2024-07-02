@@ -92,3 +92,19 @@ console.log(arr2, result)
 
 const fruitsarr = ["Banana", "Orange", "Apple", "Mango"];
 fruitsarr.unshift("Lemon","Pineapple");
+
+
+// delete() method
+// When you delete an array element, the array length is not affected. This hold even if you delete the last element of the array.
+// when the delete operator removes an array element, that element is no longer in the array.
+
+const trees = ['redwood', 'bay', 'ook','maple']
+delete trees[3]
+console.log(3 in trees) // false
+
+
+// note this creates a sparse array with an empty slot. if you want an array element to exist but have an undefined value, use the undefined values instead of the delete operator. in the following example, trees[3] is assigned the value undefined, but array element still exists
+
+trees[3] = undefined
+
+// if instead, you want to remove an array element by changing the contents of the array, use the splice() method. In the following exmample
