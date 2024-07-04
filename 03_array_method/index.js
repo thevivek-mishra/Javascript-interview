@@ -108,3 +108,11 @@ console.log(3 in trees) // false
 trees[3] = undefined
 
 // if instead, you want to remove an array element by changing the contents of the array, use the splice() method. In the following exmample
+
+
+// concat() method 
+// concat() method joins two or more strings. and does not change the existing strings. and return a new string
+
+let text1= 'hello'
+let text2 = 'word!'
+let result3 = text1.concat(" ", text2)
