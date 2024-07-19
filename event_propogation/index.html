@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        #outerdiv { 
+            background-color: lightgreen; 
+            padding: 24px; 
+            border: 1px solid black; 
+        } 
+  
+        #innerdiv { 
+            background-color: yellow; 
+            padding: 18px; 
+            border: 1px solid black; 
+  
+        } 
+  
+        #innermostdiv { 
+            background-color: orange; 
+            border: 1px solid black; 
+        } 
+    </style> 
+</head>
+<body>
+    <h3>What is Event propagation, capturing, bubbling?</h3> 
+  
+    <div id="outerdiv"> 
+        Component outerdiv
+        <div id="innerdiv"> 
+            component innerdiv 
+            <div id="innermostdiv"> 
+                component innermostdiv 
+            </div> 
+        </div> 
+    </div> 
+</body>
+<script>
+    const outerdiv = document.getElementById("outerdiv")
+    const innerdiv = document.getElementById("innerdiv")
+    const innermostdiv = document.getElementById("innermostdiv")
+
+    outerdiv.addEventListener('click',(e)=>{
+        e.stopPropagation()
+        alert("outerdiv click")
+    })
+    innerdiv.addEventListener('click',(e)=>{
+        e.stopPropagation()
+
+        alert("innerdiv click")
+    })
+    innermostdiv.addEventListener('click',(e)=>{
+        e.stopPropagation()
+
+        alert("innermostdiv click")
+    })
+            
+</script>
+</html>
